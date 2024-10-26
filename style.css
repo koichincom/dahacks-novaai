@@ -155,7 +155,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* Adjust #chat-container to center content and fit nicely on the page */
+/* Position #chat-container further down the page */
 #chat-container {
     display: flex;
     flex-direction: column;
@@ -163,19 +163,21 @@ body {
     justify-content: center;
     padding: 20px;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 100px auto 0 auto;
+    /* Adjust top margin to push it down */
     background-color: #333;
-    /* Dark background for contrast */
     border-radius: 10px;
+    height: 500px;
+    /* Increase height as needed */
 }
 
-/* Visualizer Canvas Styling */
-#visualizer {
-    width: 100%;
-    height: 100px;
-    background-color: #222;
-    /* Darker background to separate from chat area */
-    margin: 10px 0;
+/* Adjust top-links positioning */
+#top-links {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    /* Ensure it stays above other elements */
 }
 
 /* Chat Input Styling */
