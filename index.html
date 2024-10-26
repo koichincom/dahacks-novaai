@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova AI</title>
+    <meta name="description" content="Nova AI is a chatbot application that provides information about space.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top Links for Navigation -->
+    <div id="top-links">
+        <a href="about.html">About</a>
+        <a href="https://example.com" target="_blank">GitHub</a>
+    </div>
+
+    <!-- Central Display for Title and Start Button -->
+    <div id="welcome-screen">
+        <h1>Nova AI</h1>
+        <button id="start-voice-button" onclick="startChat()">Start</button>
+    </div>
+
+    <!-- Chat Area (Initially Hidden) -->
+    <div id="chat-screen" style="display: none;">
+        <!-- Chat Container -->
+        <div id="chat-container">
+            <!-- Chat Display Area -->
+            <div id="chat-display">
+                <!-- Chat messages will appear here -->
+            </div>
+
+            <!-- Visualizer Canvas Area -->
+            <canvas id="visualizer" width="800" height="100"></canvas>
+
+            <!-- Stop Button -->
+            <div id="chat-input">
+                <button id="stop-voice-button" class="button-style" onclick="stopChat()">Stop</button>
+            </div>
+        </div>
+
+        <!-- Video Display Area -->
+        <div id="video-container">
+            <video autoplay loop muted>
+                <source src="your-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
